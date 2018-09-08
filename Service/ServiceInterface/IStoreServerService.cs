@@ -12,5 +12,9 @@ namespace ServiceInterface
     public interface IStoreServerService
     {
         List<StoreModel> GetStoresDetails();
+
+        List<StoreServerModel> GetStoresServerDetails();
+
+        Int64 GenerateServerServiceStatusBatch(StoreServerModel storeServerDetails);
     }
 }

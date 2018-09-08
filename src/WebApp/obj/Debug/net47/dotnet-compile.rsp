@@ -1,5 +1,5 @@
---temp-output:c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\src\WebApp\obj\Debug\net47\
---out:c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\src\WebApp\bin\Debug\net47\WebApp.exe
+--temp-output:C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\obj\Debug\net47\
+--out:C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\bin\Debug\net47\WebApp.exe
 --define:DEBUG
 --define:TRACE
 --define:NET47
@@ -158,12 +158,12 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\System.Threading.Timer.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\net46\System.Xml.ReaderWriter.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\System.Xml.XDocument.dll
---reference:c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infrastructure\CrossCutting\bin\Debug\CrossCutting.dll
---reference:c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infrastructure\DependencyInjecionResolver\bin\Debug\DependencyInjecionResolver.dll
---reference:c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\DomainModel\DomainModel\bin\Debug\DomainModel.dll
---reference:c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Repository\Repository\bin\Debug\Repository.dll
---reference:c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Service\ServiceConcrete\bin\Debug\ServiceConcrete.dll
---reference:c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Service\ServiceInterface\bin\Debug\ServiceInterface.dll
+--reference:C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Infrastructure\CrossCutting\bin\Debug\CrossCutting.dll
+--reference:C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Infrastructure\DependencyInjecionResolver\bin\Debug\DependencyInjecionResolver.dll
+--reference:C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\DomainModel\DomainModel\bin\Debug\DomainModel.dll
+--reference:C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Repository\Repository\bin\Debug\Repository.dll
+--reference:C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Service\ServiceConcrete\bin\Debug\ServiceConcrete.dll
+--reference:C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Service\ServiceInterface\bin\Debug\ServiceInterface.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\mscorlib.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Core.dll
@@ -186,7 +186,7 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\System.Reflection.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.ComponentModel.Composition.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Runtime.Serialization.dll
---resource:"c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\src\WebApp\obj\Debug\net47\WebAppdotnet-compile.deps.json",WebApp.deps.json
-c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\src\WebApp\Program.cs
-c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\src\WebApp\Startup.cs
-c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\src\WebApp\Controllers\HomeController.cs
+--resource:"C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\obj\Debug\net47\WebAppdotnet-compile.deps.json",WebApp.deps.json
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Program.cs
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Startup.cs
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Controllers\HomeController.cs

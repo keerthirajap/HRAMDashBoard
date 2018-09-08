@@ -5,3 +5,10 @@ c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Serv
 c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Service\ServiceInterface\obj\Debug\ServiceInterface.csprojResolveAssemblyReference.cache
 c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Service\ServiceInterface\obj\Debug\ServiceInterface.dll
 c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Service\ServiceInterface\obj\Debug\ServiceInterface.pdb
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Service\ServiceInterface\bin\Debug\ServiceInterface.dll
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Service\ServiceInterface\bin\Debug\ServiceInterface.pdb
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Service\ServiceInterface\bin\Debug\DomainModel.dll
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Service\ServiceInterface\bin\Debug\DomainModel.pdb
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Service\ServiceInterface\obj\Debug\ServiceInterface.csprojResolveAssemblyReference.cache
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Service\ServiceInterface\obj\Debug\ServiceInterface.dll
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Service\ServiceInterface\obj\Debug\ServiceInterface.pdb

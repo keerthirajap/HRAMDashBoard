@@ -3,3 +3,8 @@ c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infr
 c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infrastructure\CrossCutting\obj\Debug\CrossCutting.dll
 c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infrastructure\CrossCutting\obj\Debug\CrossCutting.pdb
 c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infrastructure\CrossCutting\obj\Debug\CrossCutting.csprojResolveAssemblyReference.cache
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Infrastructure\CrossCutting\bin\Debug\CrossCutting.dll
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Infrastructure\CrossCutting\bin\Debug\CrossCutting.pdb
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Infrastructure\CrossCutting\obj\Debug\CrossCutting.csprojResolveAssemblyReference.cache
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Infrastructure\CrossCutting\obj\Debug\CrossCutting.dll
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Infrastructure\CrossCutting\obj\Debug\CrossCutting.pdb

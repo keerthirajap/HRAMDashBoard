@@ -13,5 +13,12 @@ namespace Repository
 
         [Sql("SELECT * FROM [dbo].[StoreDetails]")]
         List<StoreModel> GetStoresDetails();
+
+
+        [Sql("SELECT * FROM [dbo].[StoreServerDetails]")]
+        List<StoreServerModel> GetStoresServerDetails();
+
+        [Sql("P_GenerateServerServiceStatusBatch")]
+        Int64 GenerateServerServiceStatusBatch(StoreServerModel storeServerDetails);
     }
 }

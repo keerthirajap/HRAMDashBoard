@@ -30,5 +30,16 @@ namespace ServiceConcrete
         {
             return this._IStoreServerRepository.GetStoresDetails();
         }
+
+
+        public List<StoreServerModel> GetStoresServerDetails()
+        {
+            return this._IStoreServerRepository.GetStoresServerDetails();
+        }
+
+        public Int64 GenerateServerServiceStatusBatch(StoreServerModel storeServerDetails)
+        {
+            return this._IStoreServerRepository.GenerateServerServiceStatusBatch(storeServerDetails);
+        }
     }
 }
