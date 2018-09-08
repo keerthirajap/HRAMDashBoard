@@ -1,0 +1,5 @@
+c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\DomainModel\DomainModel\bin\Debug\DomainModel.dll
+c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\DomainModel\DomainModel\bin\Debug\DomainModel.pdb
+c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\DomainModel\DomainModel\obj\Debug\DomainModel.dll
+c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\DomainModel\DomainModel\obj\Debug\DomainModel.pdb
+c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\DomainModel\DomainModel\obj\Debug\DomainModel.csprojResolveAssemblyReference.cache

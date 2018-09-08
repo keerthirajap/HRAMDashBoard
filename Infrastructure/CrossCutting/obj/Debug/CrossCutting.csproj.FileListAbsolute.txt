@@ -1,0 +1,5 @@
+c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infrastructure\CrossCutting\bin\Debug\CrossCutting.dll
+c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infrastructure\CrossCutting\bin\Debug\CrossCutting.pdb
+c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infrastructure\CrossCutting\obj\Debug\CrossCutting.dll
+c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infrastructure\CrossCutting\obj\Debug\CrossCutting.pdb
+c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infrastructure\CrossCutting\obj\Debug\CrossCutting.csprojResolveAssemblyReference.cache

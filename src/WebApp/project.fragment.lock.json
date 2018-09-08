@@ -1,0 +1,118 @@
+{
+  "version": 2,
+  "exports": {
+    "DomainModel/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.7",
+      "compile": {
+        "bin/Debug/DomainModel.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/DomainModel.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/DomainModel.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "CrossCutting/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.7",
+      "compile": {
+        "bin/Debug/CrossCutting.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/CrossCutting.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/CrossCutting.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "DependencyInjecionResolver/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.7",
+      "compile": {
+        "bin/Debug/DependencyInjecionResolver.dll": {}
+      },
+      "runtime": {
+        "../../packages/Autofac.4.2.0/lib/net45/Autofac.dll": {},
+        "bin/Debug/DependencyInjecionResolver.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/DependencyInjecionResolver.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "ServiceInterface/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.7",
+      "compile": {
+        "bin/Debug/ServiceInterface.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/ServiceInterface.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/ServiceInterface.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.7",
+      "compile": {
+        "bin/Debug/Repository.dll": {}
+      },
+      "runtime": {
+        "../../packages/Insight.Database.6.2.3/lib/net451/Insight.Database.dll": {},
+        "../../packages/Insight.Database.Configuration.6.2.3/lib/net451/Insight.Database.Configuration.dll": {},
+        "../../packages/Insight.Database.Core.6.2.3/lib/net451/Insight.Database.Core.dll": {},
+        "../../packages/Insight.Database.Providers.Default.6.2.3/lib/net451/Insight.Database.Providers.Default.dll": {},
+        "../../packages/System.ValueTuple.4.4.0/lib/net47/System.ValueTuple.dll": {},
+        "bin/Debug/Repository.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/Repository.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "ServiceConcrete/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.7",
+      "compile": {
+        "bin/Debug/ServiceConcrete.dll": {}
+      },
+      "runtime": {
+        "../../packages/Insight.Database.6.2.3/lib/net451/Insight.Database.dll": {},
+        "../../packages/Insight.Database.Configuration.6.2.3/lib/net451/Insight.Database.Configuration.dll": {},
+        "../../packages/Insight.Database.Core.6.2.3/lib/net451/Insight.Database.Core.dll": {},
+        "../../packages/Insight.Database.Providers.Default.6.2.3/lib/net451/Insight.Database.Providers.Default.dll": {},
+        "../../packages/System.ValueTuple.4.4.0/lib/net47/System.ValueTuple.dll": {},
+        "bin/Debug/ServiceConcrete.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/ServiceConcrete.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}
