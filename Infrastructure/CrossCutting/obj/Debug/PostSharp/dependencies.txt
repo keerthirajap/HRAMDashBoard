@@ -1,0 +1,2 @@
+C:\ProgramData\PostSharp\6.0.26\bin.Release\net471\PostSharp.Compiler.Engine.dll
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Infrastructure\CrossCutting\obj\Debug\PostSharp\postsharp.config

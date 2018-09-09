@@ -25,6 +25,8 @@
         "bin/Debug/CrossCutting.dll": {}
       },
       "runtime": {
+        "../../packages/PostSharp.Redist.6.0.26/lib/net45/PostSharp.dll": {},
+        "../../packages/log4net.2.0.8/lib/net45-full/log4net.dll": {},
         "bin/Debug/CrossCutting.dll": {}
       },
       "contentFiles": {

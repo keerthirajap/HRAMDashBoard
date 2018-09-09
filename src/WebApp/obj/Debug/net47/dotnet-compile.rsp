@@ -19,6 +19,7 @@
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\AutoMapper\6.2.2\lib\net45\AutoMapper.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\Elmah.Io.AspNetCore\3.5.56\lib\netstandard1.1\Elmah.Io.AspNetCore.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\Elmah.Io.Client\3.2.52\lib\net45\Elmah.Io.Client.dll
+--reference:C:\Users\Keerthi Raja P\.nuget\packages\log4net\2.0.8\lib\net45-full\log4net.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.1\lib\net451\Microsoft.AspNetCore.Antiforgery.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\Microsoft.AspNetCore.Authorization\1.0.0\lib\net451\Microsoft.AspNetCore.Authorization.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\Microsoft.AspNetCore.Cors\1.0.0\lib\net451\Microsoft.AspNetCore.Cors.dll
@@ -123,6 +124,7 @@
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\System.ComponentModel.Primitives\4.1.0\ref\net45\System.ComponentModel.Primitives.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\System.ComponentModel.TypeConverter\4.1.0\ref\net462\System.ComponentModel.TypeConverter.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\System.Console\4.3.0\ref\net46\System.Console.dll
+--reference:C:\Users\Keerthi Raja P\.nuget\packages\system.data.sqlclient\4.5.0\ref\net461\System.Data.SqlClient.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\System.Diagnostics.Contracts.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\System.Diagnostics.Debug.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\System.Diagnostics.DiagnosticSource\4.3.0\lib\net46\System.Diagnostics.DiagnosticSource.dll
@@ -163,6 +165,7 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\System.Threading.Timer.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\net46\System.Xml.ReaderWriter.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\System.Xml.XDocument.dll
+--reference:C:\Users\Keerthi Raja P\.nuget\packages\TimeAgo\1.0.8\lib\portable-net4+sl5\TimeAgo.dll
 --reference:C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Infrastructure\CrossCutting\bin\Debug\CrossCutting.dll
 --reference:C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Infrastructure\DependencyInjecionResolver\bin\Debug\DependencyInjecionResolver.dll
 --reference:C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\DomainModel\DomainModel\bin\Debug\DomainModel.dll
@@ -186,6 +189,7 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\System.Runtime.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\System.Linq.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\System.Runtime.Extensions.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Data.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.IO.Compression.FileSystem.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Numerics.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\System.IO.dll
@@ -195,6 +199,11 @@
 --resource:"C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\obj\Debug\net47\WebAppdotnet-compile.deps.json",WebApp.deps.json
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Program.cs
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Startup.cs
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Areas\DashBoard\Controllers\DashBoardController.cs
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Areas\DashBoard\Models\DashBoardViewModel.cs
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Areas\DashBoard\Models\DashBoardViewModelDTO.cs
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Configuration\AdoNetAppender.cs
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Configuration\Log4NetProvider.cs
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Controllers\HomeController.cs
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Infrastructure\AutoMapperProfileConfiguration.cs
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Model\StoreServerViewModel.cs

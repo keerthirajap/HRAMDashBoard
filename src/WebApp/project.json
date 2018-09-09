@@ -3,6 +3,7 @@
     "Autofac.Extensions.DependencyInjection": "4.3.0",
     "AutoMapper": "6.2.2",
     "Elmah.Io.AspNetCore": "3.5.56",
+    "log4net": "2.0.8",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Mvc": "1.0.1",
     "Microsoft.AspNetCore.Razor.Tools": {
@@ -19,7 +20,9 @@
     "Microsoft.Extensions.Logging.Console": "1.0.0",
     "Microsoft.Extensions.Logging.Debug": "1.0.0",
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0"
+    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
+    "system.data.sqlclient": "4.5.0",
+    "TimeAgo": "1.0.8"
   },
 
   "tools": {

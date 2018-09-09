@@ -12,6 +12,8 @@ using Autofac.Extensions.DependencyInjection;
 using DependencyInjecionResolver;
 using WebApp.Infrastructure;
 using Elmah.Io.AspNetCore;
+using WebApp.Configuration;
+using log4net.Appender;
 
 namespace WebApp
 {
@@ -77,7 +79,7 @@ namespace WebApp
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
 
-         
+      
 
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
@@ -95,9 +97,13 @@ namespace WebApp
            
 
             app.UseStaticFiles();
+
            
+
             app.UseMvc(routes =>
             {
+                routes.MapRoute("areaRoute", "{area:exists}/{controller=Admin}/{action=Index}/{id?}");
+
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
@@ -106,5 +112,7 @@ namespace WebApp
           
 
         }
+
+      
     }
 }

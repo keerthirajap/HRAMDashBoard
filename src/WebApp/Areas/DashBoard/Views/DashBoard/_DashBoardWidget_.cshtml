@@ -1,0 +1,71 @@
+﻿@model WebApp.Areas.DashBoard.Models.DashBoardViewModel
+
+<div>
+    <div class="row" style="padding-top:5px">
+
+        <span id="usersWidgetToolTip" style="visibility:hidden">@Model.ServerStatusCheckedAgo.ToString() </span>
+            <div class="col-lg-3 col-md-3   col-sm-6  col-xs-12">
+                <div id="UsersWidget" class="box navbarItemsEmptyClass"
+                     >
+                    <script>
+                    $('#UsersWidget').bind("mouseover", function (e) {
+                        $('#UsersWidget').addClass('box-hover');
+                      
+                        $('#UsersWidget')
+                            .attr('data-original-title', $('#usersWidgetToolTip').text())
+                            .attr('data-placement', 'bottom')
+                            .tooltip('fixTitle')
+                            .tooltip('show');
+
+                    });
+
+                    $('#UsersWidget').bind("mouseout", function (e) {
+
+                        $('#UsersWidget').toggleClass('box-hover');
+
+                    });
+
+                    $("#UsersWidget").click(function () {
+                        document.location = '@Url.Action("Index", "User", new { Area = "Management" })';
+                    });
+                    </script>
+
+                    <div class="row">
+                        <div style="padding-top: 10px; float: left; padding-left: 24px; padding-bottom: 0px;">
+                            <span style="color: white; font-size: 14px;padding-right:6px">
+                                HRAM Store Servers
+
+
+                            </span>
+                            <i style="color: white; font-size: 16px;" class="fas fa-users"></i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div style="padding-top: 5px;">
+                            <span id="totalUsersWidget" style="color: white; font-size: 25px;">@Model.TotalNoHRAMISS02Servers </span>
+                        </div>
+                    </div>
+
+                    <div style="padding-top: 0px; margin-top: -6px; padding-bottom: 5px;">
+                        <span style="color: white; font-size: 11px;">Active Servers </span>
+                    </div>
+
+                    <div class="row" style="padding-top: 0px; background-color: #141c65;padding-bottom:0px">
+                        <span style="color: white; font-size: 13px;">&nbsp;In-Acive Servers :</span>
+                        <span id="currentUsersWidget" style="color: white; font-size: 13px;">
+                            @Model.TotalNoHRAMISS02ServersActive
+                        </span>
+                    </div>
+
+                    <div class="row" style="padding-top: 0px; padding-left: 17px; background-color: #141c65;padding-bottom:8px">
+                        <span style="color: white; font-size: 13px;">Active Sessions :</span>
+                        <span id="currentSessionWidget" style="color: white; font-size: 13px;">
+                            @Model.TotalNoHRAMISS02ServersInActive
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+</div>

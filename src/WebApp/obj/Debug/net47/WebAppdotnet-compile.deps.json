@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETFramework,Version=v4.7/",
-    "signature": "a681f1094a25d3c706640d1cc319e7fa697da31f"
+    "signature": "3773904989db1b80c68106f7a7867ba4e51e53cd"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,7 @@
           "Autofac.Extensions.DependencyInjection": "4.3.0",
           "AutoMapper": "6.2.2",
           "Elmah.Io.AspNetCore": "3.5.56",
+          "log4net": "2.0.8",
           "Microsoft.AspNetCore.Diagnostics": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "1.0.1",
           "Microsoft.AspNetCore.Routing": "1.0.1",
@@ -36,7 +37,9 @@
           "Microsoft.Extensions.Logging.Console": "1.0.0",
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0"
+          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
+          "system.data.sqlclient": "4.5.0",
+          "TimeAgo": "1.0.8"
         },
         "compile": {
           "WebApp.exe": {}
@@ -89,6 +92,11 @@
       "Libuv/1.9.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "log4net/2.0.8": {
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/1.0.1": {
@@ -1047,6 +1055,16 @@
           "ref/net46/System.Console.dll": {}
         }
       },
+      "system.data.sqlclient/4.5.0": {
+        "dependencies": {
+          "System.Data": "4.0.0.0",
+          "System.Xml": "4.0.0.0",
+          "mscorlib": "4.0.0.0"
+        },
+        "compile": {
+          "ref/net461/System.Data.SqlClient.dll": {}
+        }
+      },
       "System.Diagnostics.Contracts/4.0.0.0": {
         "compile": {
           ".NETFramework/v4.7/Facades/System.Diagnostics.Contracts.dll": {}
@@ -1350,6 +1368,11 @@
           "mscorlib": "4.0.0.0"
         }
       },
+      "TimeAgo/1.0.8": {
+        "compile": {
+          "lib/portable-net4+sl5/TimeAgo.dll": {}
+        }
+      },
       "CrossCutting/1.0.0": {
         "compile": {
           "bin/Debug/CrossCutting.dll": {}
@@ -1480,6 +1503,11 @@
           ".NETFramework/v4.7/Facades/System.Runtime.Extensions.dll": {}
         }
       },
+      "System.Data/4.0.0.0": {
+        "compile": {
+          ".NETFramework/v4.7/System.Data.dll": {}
+        }
+      },
       "System.IO.Compression.FileSystem/4.0.0.0": {
         "compile": {
           ".NETFramework/v4.7/System.IO.Compression.FileSystem.dll": {}
@@ -1521,6 +1549,7 @@
           "Autofac.Extensions.DependencyInjection": "4.3.0",
           "AutoMapper": "6.2.2",
           "Elmah.Io.AspNetCore": "3.5.56",
+          "log4net": "2.0.8",
           "Microsoft.AspNetCore.Diagnostics": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "1.0.1",
           "Microsoft.AspNetCore.Routing": "1.0.1",
@@ -1533,7 +1562,9 @@
           "Microsoft.Extensions.Logging.Console": "1.0.0",
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0"
+          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
+          "system.data.sqlclient": "4.5.0",
+          "TimeAgo": "1.0.8"
         },
         "runtime": {
           "WebApp.exe": {}
@@ -1586,6 +1617,11 @@
       "Libuv/1.9.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "log4net/2.0.8": {
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/1.0.1": {
@@ -2528,6 +2564,16 @@
           "lib/net46/System.Console.dll": {}
         }
       },
+      "system.data.sqlclient/4.5.0": {
+        "dependencies": {
+          "System.Data": "4.0.0.0",
+          "System.Xml": "4.0.0.0",
+          "mscorlib": "4.0.0.0"
+        },
+        "runtime": {
+          "lib/net461/System.Data.SqlClient.dll": {}
+        }
+      },
       "System.Diagnostics.Contracts/4.0.0.0": {},
       "System.Diagnostics.Debug/4.0.10.0": {},
       "System.Diagnostics.DiagnosticSource/4.3.0": {
@@ -2777,8 +2823,15 @@
           "lib/net46/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "TimeAgo/1.0.8": {
+        "runtime": {
+          "lib/portable-net4+sl5/TimeAgo.dll": {}
+        }
+      },
       "CrossCutting/1.0.0": {
         "runtime": {
+          "../../packages/PostSharp.Redist.6.0.26/lib/net45/PostSharp.dll": {},
+          "../../packages/log4net.2.0.8/lib/net45-full/log4net.dll": {},
           "bin/Debug/CrossCutting.dll": {}
         }
       },
@@ -2850,6 +2903,7 @@
       "System.Runtime/4.0.20.0": {},
       "System.Linq/4.0.0.0": {},
       "System.Runtime.Extensions/4.0.10.0": {},
+      "System.Data/4.0.0.0": {},
       "System.IO.Compression.FileSystem/4.0.0.0": {},
       "System.Numerics/4.0.0.0": {},
       "System.IO/4.0.10.0": {},
@@ -2893,6 +2947,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-9Q7AaqtQhS8JDSIvRBt6ODSLWDBI4c8YxNxyCQemWebBFUtBbc6M5Vi5Gz1ZyIUlTW3rZK9bIr5gnVyv0z7a2Q=="
+    },
+    "log4net/2.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-N41MQGHZImiCfn0cUuSBjZxrcNfIQCuCgQP0rpgB3J/NWponEh3lc1LxJEuIsPAR9Oc1jVvfkNNFCY1C5hf9LA=="
     },
     "Microsoft.AspNetCore.Antiforgery/1.0.1": {
       "type": "package",
@@ -3339,6 +3398,11 @@
       "serviceable": true,
       "sha512": "sha512-DHDrIxiqk1h03m6khKWV2X8p/uvN79rgSqpilL6uzpmSfxfU5ng8VcPtW4qsDsQDHiTv6IPV9TmD5M/vElPNLg=="
     },
+    "system.data.sqlclient/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-q6xYImrsNz+WZCa4/zvgUUihMQUxdI3S6e2gPsCA8TB8Ott7/frxxoeIoyjp3dsmvolA9StFD/Ib6tDPf5sHVA=="
+    },
     "System.Diagnostics.Contracts/4.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -3574,6 +3638,11 @@
       "serviceable": true,
       "sha512": "sha512-FLhdYJx4331oGovQypQ8JIw2kEmNzCsjVOVYY/16kZTUoquZG85oVn7yUhBE2OZt1yGPSXAL0HTEfzjlbNpM7Q=="
     },
+    "TimeAgo/1.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sXT3CxKDXyoG1/JxClqBBTfHjDENhsqJSVbhseW08lc/rSsMjOnhOh6YTrqIXtm9eTcbWEo4DEtn57KDlIxZaA=="
+    },
     "CrossCutting/1.0.0": {
       "type": "msbuildproject",
       "serviceable": false,
@@ -3685,6 +3754,11 @@
       "sha512": ""
     },
     "System.Runtime.Extensions/4.0.10.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Data/4.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

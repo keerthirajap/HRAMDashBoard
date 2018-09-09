@@ -10,6 +10,7 @@ using AutoMapper;
 
 namespace WebApp.Controllers
 {
+   
     public class HomeController : Controller
     {
         IStoreServerService _IStoreServerService;
@@ -25,8 +26,8 @@ namespace WebApp.Controllers
         public IActionResult Index()
         {
 
-            var i = 0;
-            var result = 42 / i;
+            //var i = 0;
+            //var result = 42 / i;
 
             var vv = this._IStoreServerService.GetStoresDetails();
             List<StoreViewModel> storesViewModelList = new List<StoreViewModel>();

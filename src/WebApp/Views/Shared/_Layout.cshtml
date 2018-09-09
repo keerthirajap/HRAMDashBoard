@@ -3,47 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WebApp</title>
+    <title>@ViewData["Title"]</title>
 
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment names="Staging,Production">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">WebApp</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - WebApp</p>
-        </footer>
-    </div>
+
+
 
     <environment names="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -51,17 +23,69 @@
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment names="Staging,Production">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+        <script src="~/lib/jquery/dist/jquery.min.js"
                 asp-fallback-test="window.jQuery">
         </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
     @RenderSection("scripts", required: false)
+
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top paddingRight10px">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+                    @Html.ActionLink("HRAM DashBoard", "Index", "DashBoard", new { area = "DashBoard" }, new { @class = "navbar-brand navbarItemsEmptyClass", @style = "padding-left:90px" })
+               
+                <div id="brandLogo" style="background-color:rgb(17, 23, 82);box-shadow: 2px 3px 10px rgba(10, 6, 6, 0.38); position: fixed; width: 61px; height: 58px; left: 13px;  z-index: 2;cursor:pointer">
+                    <h3 style="color:white;margin-top: 13px;margin-left: 2px;">Logo</h3>
+                </div>
+            </div>
+
+
+
+            <div class="navbar-collapse collapse">
+               
+                    <ul class="nav navbar-nav">
+                        <li id="fileEncryptMenu">@Html.ActionLink("File", "Index", "FileEncrypt", new { area = "FileEncrypt" }, new { @class = "navbarItemsEmptyClass" })</li>
+
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                        <li id="adminMenu" class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Cache", "Index", "CacheManage", new { area = "Admin" }, new { @class = "navbarItemsEmptyClass" })</li>
+                                <li>@Html.ActionLink("Notification", "Index", "NotifyManage", new { area = "Management" }, new { @class = "navbarItemsEmptyClass" })</li>
+                                <li>@Html.ActionLink("User", "Index", "UserManage", new { area = "Admin" }, new { @class = "navbarItemsEmptyClass" })</li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                
+           
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid body-content">
+        @RenderBody()
+
+
+    </div>
+
+
 </body>
 </html>
