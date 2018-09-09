@@ -4,19 +4,34 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ServiceInterface;
+using WebApp.Model;
+using DomainModel;
+using AutoMapper;
 
 namespace WebApp.Controllers
 {
     public class HomeController : Controller
     {
         IStoreServerService _IStoreServerService;
-        public HomeController(IStoreServerService iStoreServerService)
+
+        private readonly IMapper _mapper;
+
+        public HomeController(IStoreServerService iStoreServerService, IMapper mapper)
         {
             this._IStoreServerService = iStoreServerService;
+            _mapper = mapper;
+
         }
         public IActionResult Index()
         {
-            var vv = this._IStoreServerService.GetStoresDetails();
+           var vv = this._IStoreServerService.GetStoresDetails();
+            List<StoreViewModel> storesViewModelList = new List<StoreViewModel>();
+            List<StoreModel> storesList = new List<StoreModel>();
+            storesList = this._IStoreServerService.GetStoresDetails();
+
+            this._mapper.Map(storesList, storesViewModelList);
+
+          
             return View();
         }
 

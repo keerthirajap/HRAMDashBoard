@@ -18,6 +18,7 @@ c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Serv
 c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Service\ServiceConcrete\obj\Debug\ServiceConcrete.csprojResolveAssemblyReference.cache
 c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Service\ServiceConcrete\obj\Debug\ServiceConcrete.dll
 c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Service\ServiceConcrete\obj\Debug\ServiceConcrete.pdb
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Service\ServiceConcrete\bin\Debug\ServiceConcrete.dll.config
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Service\ServiceConcrete\bin\Debug\ServiceConcrete.dll
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Service\ServiceConcrete\bin\Debug\ServiceConcrete.pdb
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Service\ServiceConcrete\bin\Debug\DomainModel.dll

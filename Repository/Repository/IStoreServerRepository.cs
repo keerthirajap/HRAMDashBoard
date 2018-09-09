@@ -20,5 +20,8 @@ namespace Repository
 
         [Sql("P_GenerateServerServiceStatusBatch")]
         Int64 GenerateServerServiceStatusBatch(StoreServerModel storeServerDetails);
+
+        [Sql("P_UpdateServerServiceStatusBatch")]
+        bool UpdateServerServiceStatusBatch(List<StoreServerModel> T_ServerStatusDetails);
     }
 }

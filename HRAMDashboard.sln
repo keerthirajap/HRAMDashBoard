@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossCutting", "Infrastruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjecionResolver", "Infrastructure\DependencyInjecionResolver\DependencyInjecionResolver.csproj", "{44240756-3878-45F8-A574-9A2362BCB887}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mappings", "Infrastructure\Mappings\Mappings.csproj", "{270B5AC6-A565-4F57-BBE0-57F4360A2C33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{44240756-3878-45F8-A574-9A2362BCB887}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44240756-3878-45F8-A574-9A2362BCB887}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44240756-3878-45F8-A574-9A2362BCB887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{270B5AC6-A565-4F57-BBE0-57F4360A2C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{270B5AC6-A565-4F57-BBE0-57F4360A2C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{270B5AC6-A565-4F57-BBE0-57F4360A2C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{270B5AC6-A565-4F57-BBE0-57F4360A2C33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,5 +98,6 @@ Global
 		{3C461CBB-33E6-4E14-A82A-1BE66783A25D} = {D6A7BF57-A28E-4E4A-85E6-04C38C1969F7}
 		{B0C2AEE8-410E-40F8-96EA-A29631BC2D65} = {3C461CBB-33E6-4E14-A82A-1BE66783A25D}
 		{44240756-3878-45F8-A574-9A2362BCB887} = {3C461CBB-33E6-4E14-A82A-1BE66783A25D}
+		{270B5AC6-A565-4F57-BBE0-57F4360A2C33} = {3C461CBB-33E6-4E14-A82A-1BE66783A25D}
 	EndGlobalSection
 EndGlobal

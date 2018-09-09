@@ -41,5 +41,11 @@ namespace ServiceConcrete
         {
             return this._IStoreServerRepository.GenerateServerServiceStatusBatch(storeServerDetails);
         }
+
+       public bool UpdateServerServiceStatusBatch(List<StoreServerModel> ServerStatusDetails)
+        {
+            return this._IStoreServerRepository.UpdateServerServiceStatusBatch(ServerStatusDetails);
+        }
+
     }
 }

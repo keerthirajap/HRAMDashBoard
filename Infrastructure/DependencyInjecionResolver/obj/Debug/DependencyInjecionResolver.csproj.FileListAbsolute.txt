@@ -19,6 +19,7 @@ C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infr
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infrastructure\DependencyInjecionResolver\obj\Debug\DependencyInjecionResolver.csprojResolveAssemblyReference.cache
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infrastructure\DependencyInjecionResolver\obj\Debug\DependencyInjecionResolver.dll
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\Infrastructure\DependencyInjecionResolver\obj\Debug\DependencyInjecionResolver.pdb
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Infrastructure\DependencyInjecionResolver\bin\Debug\DependencyInjecionResolver.dll.config
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Infrastructure\DependencyInjecionResolver\bin\Debug\DependencyInjecionResolver.dll
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Infrastructure\DependencyInjecionResolver\bin\Debug\DependencyInjecionResolver.pdb
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Infrastructure\DependencyInjecionResolver\bin\Debug\Autofac.dll

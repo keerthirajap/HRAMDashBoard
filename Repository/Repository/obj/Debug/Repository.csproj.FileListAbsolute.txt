@@ -14,6 +14,7 @@ c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Repo
 c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Repository\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
 c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Repository\Repository\obj\Debug\Repository.dll
 c:\users\keerthi raja p\Documents\Visual Studio 2015\Projects\HRAMDashboard\Repository\Repository\obj\Debug\Repository.pdb
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Repository\Repository\bin\Debug\Repository.dll.config
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Repository\Repository\bin\Debug\Repository.dll
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Repository\Repository\bin\Debug\Repository.pdb
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Repository\Repository\bin\Debug\DomainModel.dll

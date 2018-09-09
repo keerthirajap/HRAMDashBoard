@@ -26,6 +26,20 @@
           "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
         }
       },
+      "AutoMapper/6.2.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Runtime.Serialization"
+        ],
+        "compile": {
+          "lib/net45/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/net45/AutoMapper.dll": {}
+        }
+      },
       "Libuv/1.9.0": {
         "type": "package",
         "dependencies": {
@@ -2456,6 +2470,23 @@
         "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll",
         "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.pdb",
         "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.xml"
+      ]
+    },
+    "AutoMapper/6.2.2": {
+      "sha512": "eGKcnJdoF5rYMWPUaSPtlWdvua9xw4hnQN5kM/X4AXLGKghrtPIaMv+RYoA3sj0kyZ3X6wZ1Qj67F+u0pCCPaw==",
+      "type": "package",
+      "path": "AutoMapper/6.2.2",
+      "files": [
+        "AutoMapper.6.2.2.nupkg.sha512",
+        "AutoMapper.nuspec",
+        "lib/net40/AutoMapper.dll",
+        "lib/net40/AutoMapper.xml",
+        "lib/net45/AutoMapper.dll",
+        "lib/net45/AutoMapper.xml",
+        "lib/netstandard1.1/AutoMapper.dll",
+        "lib/netstandard1.1/AutoMapper.xml",
+        "lib/netstandard1.3/AutoMapper.dll",
+        "lib/netstandard1.3/AutoMapper.xml"
       ]
     },
     "Libuv/1.9.0": {
@@ -7145,6 +7176,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "AutoMapper >= 6.2.2",
       "Autofac.Extensions.DependencyInjection >= 4.3.0",
       "Microsoft.AspNetCore.Diagnostics >= 1.0.0",
       "Microsoft.AspNetCore.Mvc >= 1.0.1",

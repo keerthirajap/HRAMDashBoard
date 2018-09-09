@@ -66,7 +66,7 @@ namespace ServerStatusChecker
             var trigger = TriggerBuilder.Create()
                 .WithIdentity("Heartbeat", "Maintenance")
                 .StartNow()
-                .WithSchedule(SimpleScheduleBuilder.RepeatSecondlyForever(100)).Build();
+                .WithSchedule(SimpleScheduleBuilder.RepeatSecondlyForever(20)).Build();
             var cts = new CancellationTokenSource();
 
             var scheduler = container.Resolve<IScheduler>();

@@ -38,6 +38,7 @@ namespace ServerStatusChecker
             foreach (var item in storeServerList)
             {
                 StoreServerModel storeServerStatus = new StoreServerModel();
+                storeServerStatus = item;
                 storeServerStatus.ServerStatusBatchId = batchId;
                 try
                 {
@@ -68,11 +69,14 @@ namespace ServerStatusChecker
 
                 lock (storeServerStatusList)
                 {
-                    storeServerStatusList.Add(storeServerStatus);
+                    storeServerStatusList.Add(storeServerStatus); 
                 }
             }
 
+
+
             //_heartbeat.UpdateServiceState("alive");
+            var isUpdateSuccess = this._IStoreServerService.UpdateServerServiceStatusBatch(storeServerStatusList);
             return Task.CompletedTask;
         }
     }

@@ -61,7 +61,6 @@ C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAM
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\WindowsService\ServerStatusChecker\bin\Debug\Repository.dll
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\WindowsService\ServerStatusChecker\bin\Debug\Insight.Database.Providers.Default.dll
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\WindowsService\ServerStatusChecker\bin\Debug\Insight.Database.Core.dll
-C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\WindowsService\ServerStatusChecker\bin\Debug\System.ValueTuple.dll
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\WindowsService\ServerStatusChecker\bin\Debug\DomainModel.pdb
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\WindowsService\ServerStatusChecker\bin\Debug\CrossCutting.pdb
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\WindowsService\ServerStatusChecker\bin\Debug\DependencyInjecionResolver.pdb
@@ -82,7 +81,6 @@ C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAM
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\WindowsService\ServerStatusChecker\bin\Debug\Repository.pdb
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\WindowsService\ServerStatusChecker\bin\Debug\Insight.Database.Providers.Default.xml
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\WindowsService\ServerStatusChecker\bin\Debug\Insight.Database.Core.xml
-C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\WindowsService\ServerStatusChecker\bin\Debug\System.ValueTuple.xml
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\WindowsService\ServerStatusChecker\obj\Debug\ServerStatusChecker.csprojResolveAssemblyReference.cache
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\WindowsService\ServerStatusChecker\obj\Debug\ServerStatusChecker.exe
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\WindowsService\ServerStatusChecker\obj\Debug\ServerStatusChecker.pdb

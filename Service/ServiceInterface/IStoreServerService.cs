@@ -16,5 +16,8 @@ namespace ServiceInterface
         List<StoreServerModel> GetStoresServerDetails();
 
         Int64 GenerateServerServiceStatusBatch(StoreServerModel storeServerDetails);
+
+
+        bool UpdateServerServiceStatusBatch(List<StoreServerModel> ServerStatusDetails);
     }
 }
