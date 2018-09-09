@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETFramework,Version=v4.7/",
-    "signature": "9354de001b8f03088be898d27a54aa4554761f88"
+    "signature": "8a91c55fd1d6d26eb9620e3b403b58c505228766"
   },
   "compilationOptions": {
     "defines": [
@@ -30,6 +30,7 @@
           "Microsoft.AspNet.SignalR": "2.3.0",
           "Microsoft.AspNetCore.Diagnostics": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "1.0.1",
+          "Microsoft.AspNetCore.Owin": "1.0.0",
           "Microsoft.AspNetCore.Routing": "1.0.1",
           "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
           "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
@@ -503,6 +504,14 @@
         },
         "compile": {
           "lib/net451/Microsoft.AspNetCore.Mvc.ViewFeatures.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Owin/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http": "1.0.0"
+        },
+        "compile": {
+          "lib/net451/Microsoft.AspNetCore.Owin.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor/1.0.0": {
@@ -1615,6 +1624,7 @@
           "Microsoft.AspNet.SignalR": "2.3.0",
           "Microsoft.AspNetCore.Diagnostics": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "1.0.1",
+          "Microsoft.AspNetCore.Owin": "1.0.0",
           "Microsoft.AspNetCore.Routing": "1.0.1",
           "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
           "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
@@ -2088,6 +2098,14 @@
         },
         "runtime": {
           "lib/net451/Microsoft.AspNetCore.Mvc.ViewFeatures.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Owin/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http": "1.0.0"
+        },
+        "runtime": {
+          "lib/net451/Microsoft.AspNetCore.Owin.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor/1.0.0": {
@@ -3266,6 +3284,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-1zGeF76JEqvocxdM+H5n/vJunUUVNzKK4LmgnaFdrrCDTrI6MVdok+8TBBUbeI+uNk3ssrLnP3EcHIdvxl66gw=="
+    },
+    "Microsoft.AspNetCore.Owin/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z3H3wfiHn3NKXmFzXGD6oeqyV1WJ+SpLks9mWL89zXDIFc4O1inm9JXegpC5t7HGM/0taIhrDqWTaKiLqZO7Rw=="
     },
     "Microsoft.AspNetCore.Razor/1.0.0": {
       "type": "package",

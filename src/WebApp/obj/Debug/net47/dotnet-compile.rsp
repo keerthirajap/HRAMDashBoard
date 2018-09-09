@@ -55,6 +55,7 @@
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\Microsoft.AspNetCore.Mvc.Razor.Host\1.0.1\lib\net451\Microsoft.AspNetCore.Mvc.Razor.Host.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\Microsoft.AspNetCore.Mvc.TagHelpers\1.0.1\lib\net451\Microsoft.AspNetCore.Mvc.TagHelpers.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\Microsoft.AspNetCore.Mvc.ViewFeatures\1.0.1\lib\net451\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+--reference:C:\Users\Keerthi Raja P\.nuget\packages\Microsoft.AspNetCore.Owin\1.0.0\lib\net451\Microsoft.AspNetCore.Owin.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\Microsoft.AspNetCore.Razor\1.0.0\lib\net451\Microsoft.AspNetCore.Razor.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\Microsoft.AspNetCore.Razor.Runtime\1.0.0\lib\net451\Microsoft.AspNetCore.Razor.Runtime.dll
 --reference:C:\Users\Keerthi Raja P\.nuget\packages\Microsoft.AspNetCore.Razor.Tools\1.0.0-preview2-final\lib\net451\dotnet-razor-tooling.exe
@@ -210,6 +211,7 @@ C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAM
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Configuration\AdoNetAppender.cs
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Configuration\Log4NetProvider.cs
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Controllers\HomeController.cs
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Hubs\BuilderExtensions.cs
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Hubs\DashBoardHub.cs
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Infrastructure\AutoMapperProfileConfiguration.cs
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\src\WebApp\Model\StoreServerViewModel.cs

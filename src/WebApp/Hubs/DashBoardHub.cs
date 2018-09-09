@@ -26,6 +26,14 @@ namespace WebApp.Hubs
 
         }
 
+        public override Task OnConnected()
+        {
+
+            return base.OnConnected();
+
+
+        }
+
         public void UpdateDashBoardHub()
         {
 

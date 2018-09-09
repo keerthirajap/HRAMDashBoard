@@ -53,6 +53,10 @@ namespace WebApp
             var mapper = config.CreateMapper();
             services.AddSingleton(mapper);
 
+
+
+          
+
             // Add framework services.
             services.AddMvc();
 
@@ -93,6 +97,9 @@ namespace WebApp
 
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+            //app.UseWebSockets(); 
+            app.UseSignalR2();
 
             if (env.IsDevelopment())
             {
