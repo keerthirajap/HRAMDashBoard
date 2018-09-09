@@ -11,9 +11,16 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using DependencyInjecionResolver;
 using WebApp.Infrastructure;
-using Elmah.Io.AspNetCore;
+
 using WebApp.Configuration;
 using log4net.Appender;
+using WebApp.Scheduler;
+using WebApp;
+using Hangfire;
+using System.Diagnostics;
+using Hangfire.Common;
+using ServiceInterface;
+using WebApp.Hubs;
 
 namespace WebApp
 {
@@ -35,9 +42,8 @@ namespace WebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-
-
-           
+            services.AddHangfire(cc =>
+       cc.UseSqlServerStorage("Data Source=.;Initial Catalog=HRAMDashBoard;Integrated Security=True"));
 
             var config = new AutoMapper.MapperConfiguration(cfg =>
             {
@@ -47,39 +53,43 @@ namespace WebApp
             var mapper = config.CreateMapper();
             services.AddSingleton(mapper);
 
-
             // Add framework services.
             services.AddMvc();
-          
 
-            //  services.AddGlimpse();
             // Create the container builder.
             var builder = new ContainerBuilder();
 
-            // Register dependencies, populate the services from
-            // the collection, and build the container.
-            //
-            // Note that Populate is basically a foreach to add things
-            // into Autofac that are in the collection. If you register
-            // things in Autofac BEFORE Populate then the stuff in the
-            // ServiceCollection can override those things; if you register
-            // AFTER Populate those registrations can override things
-            // in the ServiceCollection. Mix and match as needed.
             builder.Populate(services);
             builder.RegisterModule(new ServiceDIContainer());
+            builder.RegisterType<DashBoardHub>().ExternallyOwned(); // SignalR hub
+            builder.RegisterType<DashBoardJob>().InstancePerDependency(); // Hangfire job
 
             this.ApplicationContainer = builder.Build();
 
-            // Create the IServiceProvider based on the container.
             return new AutofacServiceProvider(this.ApplicationContainer);
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, 
+                                                    ILoggerFactory loggerFactory
+                                                , IApplicationLifetime appLifetime)
         {
+            #region HangFire
+            app.UseHangfireDashboard();
+            app.UseHangfireServer();
 
-      
+            BackgroundJob.Enqueue<DashBoardJob>(
+                     x => x.Execute());
+
+            RecurringJob.AddOrUpdate<DashBoardJob>("Recurring1", myService => myService.RecouringExecute(),
+                                    Cron.MinuteInterval(1));
+
+            RecurringJob.AddOrUpdate(() => Debug.WriteLine("Recurring!"), Cron.MinuteInterval(1));
+
+            var jobId = BackgroundJob.Enqueue(
+                     () => Debug.WriteLine("Fire-and-forget!"));
+            #endregion
+
 
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
@@ -93,13 +103,7 @@ namespace WebApp
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
-           
-
             app.UseStaticFiles();
-
-           
-
             app.UseMvc(routes =>
             {
                 routes.MapRoute("areaRoute", "{area:exists}/{controller=Admin}/{action=Index}/{id?}");
@@ -108,11 +112,12 @@ namespace WebApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-
-          
-
         }
 
-      
+     
+
     }
+
+
+
 }

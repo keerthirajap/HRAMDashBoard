@@ -2,8 +2,11 @@
   "dependencies": {
     "Autofac.Extensions.DependencyInjection": "4.3.0",
     "AutoMapper": "6.2.2",
-    "Elmah.Io.AspNetCore": "3.5.56",
+    "FluentScheduler": "5.3.0",
+    "Hangfire.AspNetCore": "1.6.2",
+    "Hangfire.SqlServer": "1.6.2",
     "log4net": "2.0.8",
+    "Microsoft.AspNet.SignalR": "2.3.0",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Mvc": "1.0.1",
     "Microsoft.AspNetCore.Razor.Tools": {
@@ -67,5 +70,6 @@
   "scripts": {
     "prepublish": [ "bower install", "dotnet bundle" ],
     "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
-  }
+  },
+  "userSecretsId": "aspnet-WebApp-20180909082743"
 }

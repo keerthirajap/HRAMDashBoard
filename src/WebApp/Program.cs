@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using System.Xml;
 using System.Reflection;
+using FluentScheduler;
+using System.Diagnostics;
 
 namespace WebApp
 {
@@ -34,6 +36,13 @@ namespace WebApp
                 .Build();
 
             host.Run();
+
+           
+
+
         }
     }
+
+
+  
 }
