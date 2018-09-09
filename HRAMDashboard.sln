@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjecionResolver"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mappings", "Infrastructure\Mappings\Mappings.csproj", "{270B5AC6-A565-4F57-BBE0-57F4360A2C33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerStatus", "ServerStatus\ServerStatus.csproj", "{D5C75EAF-F5AA-464C-BE34-BD3551677A01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,10 @@ Global
 		{270B5AC6-A565-4F57-BBE0-57F4360A2C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{270B5AC6-A565-4F57-BBE0-57F4360A2C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{270B5AC6-A565-4F57-BBE0-57F4360A2C33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5C75EAF-F5AA-464C-BE34-BD3551677A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C75EAF-F5AA-464C-BE34-BD3551677A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C75EAF-F5AA-464C-BE34-BD3551677A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C75EAF-F5AA-464C-BE34-BD3551677A01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,5 +105,6 @@ Global
 		{B0C2AEE8-410E-40F8-96EA-A29631BC2D65} = {3C461CBB-33E6-4E14-A82A-1BE66783A25D}
 		{44240756-3878-45F8-A574-9A2362BCB887} = {3C461CBB-33E6-4E14-A82A-1BE66783A25D}
 		{270B5AC6-A565-4F57-BBE0-57F4360A2C33} = {3C461CBB-33E6-4E14-A82A-1BE66783A25D}
+		{D5C75EAF-F5AA-464C-BE34-BD3551677A01} = {180B0524-22FA-4FB2-91DB-D3740F33B34F}
 	EndGlobalSection
 EndGlobal
