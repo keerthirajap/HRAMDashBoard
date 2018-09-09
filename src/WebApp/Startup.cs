@@ -11,7 +11,7 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using DependencyInjecionResolver;
 using WebApp.Infrastructure;
-
+using Elmah.Io.AspNetCore;
 
 namespace WebApp
 {
@@ -33,6 +33,10 @@ namespace WebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+
+
+           
+
             var config = new AutoMapper.MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new AutoMapperProfileConfiguration());
@@ -44,7 +48,9 @@ namespace WebApp
 
             // Add framework services.
             services.AddMvc();
-          //  services.AddGlimpse();
+          
+
+            //  services.AddGlimpse();
             // Create the container builder.
             var builder = new ContainerBuilder();
 
@@ -86,6 +92,8 @@ namespace WebApp
                 app.UseExceptionHandler("/Home/Error");
             }
 
+           
+
             app.UseStaticFiles();
            
             app.UseMvc(routes =>
@@ -95,7 +103,8 @@ namespace WebApp
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            
+          
+
         }
     }
 }
