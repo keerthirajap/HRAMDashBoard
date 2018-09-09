@@ -21,6 +21,10 @@ using System.Diagnostics;
 using Hangfire.Common;
 using ServiceInterface;
 using WebApp.Hubs;
+using Microsoft.Owin;
+using System.Reflection;
+
+[assembly: OwinStartup(typeof(WebApp.Startup))]
 
 namespace WebApp
 {
@@ -55,7 +59,10 @@ namespace WebApp
 
 
 
-          
+
+            services.AddSignalR(opt =>
+             { opt.Hubs.EnableDetailedErrors = true; }
+            );
 
             // Add framework services.
             services.AddMvc();
@@ -66,6 +73,8 @@ namespace WebApp
             builder.Populate(services);
             builder.RegisterModule(new ServiceDIContainer());
             builder.RegisterType<DashBoardHub>().ExternallyOwned(); // SignalR hub
+          
+          
             builder.RegisterType<DashBoardJob>().InstancePerDependency(); // Hangfire job
 
             this.ApplicationContainer = builder.Build();
@@ -98,9 +107,7 @@ namespace WebApp
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            //app.UseWebSockets(); 
-            app.UseSignalR2();
-
+          
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -111,6 +118,20 @@ namespace WebApp
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
+            app.UseWebSockets();
+            app.UseSignalR();
+
+            //app.UseSignalR(configure =>
+            //{
+            //    configure.MapHub<Hub>("hub", options =>
+            //    {
+            //        options.Transports = TransportType.All;
+            //        options.LongPolling.PollTimeout = TimeSpan.FromSeconds(10);
+            //        options.WebSockets.CloseTimeout = TimeSpan.FromSeconds(10);
+            //    });
+            //});
+
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute("areaRoute", "{area:exists}/{controller=Admin}/{action=Index}/{id?}");

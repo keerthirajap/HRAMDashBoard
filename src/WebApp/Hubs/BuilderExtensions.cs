@@ -12,29 +12,29 @@ namespace WebApp.Hubs
 
     public static class BuilderExtensions
     {
-        public static IApplicationBuilder UseAppBuilder(
-            this IApplicationBuilder app,
-            Action<IAppBuilder> configure)
-        {
-            app.UseOwin(addToPipeline =>
-            {
-                addToPipeline(next =>
-                {
-                    var appBuilder = new AppBuilder();
-                    appBuilder.Properties["builder.DefaultApp"] = next;
+        //public static IApplicationBuilder UseAppBuilder(
+        //    this IApplicationBuilder app,
+        //    Action<IAppBuilder> configure)
+        //{
+        //    app.UseOwin(addToPipeline =>
+        //    {
+        //        addToPipeline(next =>
+        //        {
+        //            var appBuilder = new AppBuilder();
+        //            appBuilder.Properties["builder.DefaultApp"] = next;
 
-                    configure(appBuilder);
+        //            configure(appBuilder);
 
-                    return appBuilder.Build<AppFunc>();
-                });
-            });
+        //            return appBuilder.Build<AppFunc>();
+        //        });
+        //    });
 
-            return app;
-        }
+        //    return app;
+        //}
 
-        public static void UseSignalR2(this IApplicationBuilder app)
-        {
-            app.UseAppBuilder(appBuilder => appBuilder.MapSignalR());
-        }
+        //public static void UseSignalR2(this IApplicationBuilder app)
+        //{
+        //    app.UseAppBuilder(appBuilder => appBuilder.MapSignalR());
+        //}
     }
 }

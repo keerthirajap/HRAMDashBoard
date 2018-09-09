@@ -6,7 +6,8 @@
     "Hangfire.AspNetCore": "1.6.2",
     "Hangfire.SqlServer": "1.6.2",
     "log4net": "2.0.8",
-    "Microsoft.AspNet.SignalR": "2.3.0",
+    "Microsoft.AspNetCore.WebSockets": "1.0.2",
+    "Gray.Microsoft.AspNetCore.SignalR.Server": "0.2.0-alpha1",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Mvc": "1.0.1",
     "Microsoft.AspNetCore.Owin": "1.0.0",
@@ -20,13 +21,14 @@
     "Microsoft.AspNetCore.StaticFiles": "1.0.0",
     "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",
     "Microsoft.Extensions.Configuration.Json": "1.0.0",
-    "Microsoft.Extensions.Logging": "1.0.0",
     "Microsoft.Extensions.Logging.Console": "1.0.0",
     "Microsoft.Extensions.Logging.Debug": "1.0.0",
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
     "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
     "system.data.sqlclient": "4.5.0",
-    "TimeAgo": "1.0.8"
+    "TimeAgo": "1.0.8",
+    "Microsoft.Owin": "4.0.0"
+
   },
 
   "tools": {

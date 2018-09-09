@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNet.SignalR;
+
 using ServiceInterface;
 using AutoMapper;
 using Autofac;
+using Microsoft.AspNetCore.SignalR.Hubs;
+using Microsoft.AspNetCore.SignalR;
+
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace WebApp.Hubs
 {
+    
     public class DashBoardHub : Hub
     {
         private readonly ILifetimeScope _hubLifetimeScope;
@@ -31,6 +35,13 @@ namespace WebApp.Hubs
 
             return base.OnConnected();
 
+
+        }
+
+        public void testt()
+        {
+
+            Clients.All.Test("3000", "2000");
 
         }
 
