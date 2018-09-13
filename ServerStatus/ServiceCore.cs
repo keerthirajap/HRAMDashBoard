@@ -1,9 +1,28 @@
 ﻿using System;
 using Common.Logging;
 using Quartz;
+using Microsoft.Owin.Hosting;
+using Owin;
+using Microsoft.Owin.Cors;
+using Microsoft.AspNet.SignalR;
+using System.Threading;
+using ServerStatus;
 
-public class ServiceCore
+
+class Startup
 {
+    public void Configuration(IAppBuilder app)
+    {
+        app.UseCors(CorsOptions.AllowAll);
+        app.MapSignalR();
+    }
+
+}
+
+public class ServiceCore : Hub
+{
+
+
     private static readonly ILog s_log = LogManager.GetLogger<ServiceCore>();
     private readonly IScheduler _scheduler;
 
@@ -16,11 +35,15 @@ public class ServiceCore
 
     public bool Start()
     {
+
+  
+
         s_log.Info("Service started");
 
         if (!_scheduler.IsStarted)
         {
             s_log.Info("Starting Scheduler");
+
             _scheduler.Start();
         }
         return true;
@@ -34,4 +57,5 @@ public class ServiceCore
         s_log.Info("Service stopped");
         return true;
     }
+
 }

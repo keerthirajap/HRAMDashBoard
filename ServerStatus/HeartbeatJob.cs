@@ -8,9 +8,20 @@
     using System.Collections.Generic;
     using DomainModel;
     using System.Net.NetworkInformation;
+    using Microsoft.AspNet.SignalR;
+    using Microsoft.Owin.Hosting;
+    using System.Threading;
+    using System.Net;
+    using System.IO;
+    using Owin;
+    using Microsoft.Owin.Cors;
+
+
 
     public class HeartbeatJob : IJob
     {
+
+
         private readonly IHeartbeatService _hearbeat;
         IStoreServerService _IStoreServerService;
 
@@ -23,9 +34,23 @@
             this._IStoreServerService = iStoreServerService;
         }
 
+
+
         public void Execute(IJobExecutionContext context)
         {
-            // _hearbeat.UpdateServiceState("alive");
+
+
+
+            if (ServiceGlobalVariable.SignalRHubExists)
+            {
+
+                // Get the context for the Pusher hub
+                IHubContext hubContext = GlobalHost.ConnectionManager.GetHubContext<MyHub>();
+                hubContext.Clients.All.addMessage("StatusCheck", DateTime.Now.ToString());
+
+            }
+          
+
 
             List<StoreModel> storeList = new List<StoreModel>();
             storeList = this._IStoreServerService.GetStoresDetails();

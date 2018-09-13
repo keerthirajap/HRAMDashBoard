@@ -2,12 +2,17 @@
 using Autofac.Extras.Quartz;
 using DependencyInjecionResolver;
 using log4net;
+using Microsoft.AspNet.SignalR;
+using Microsoft.Owin.Cors;
+using Microsoft.Owin.Hosting;
+using Owin;
 using Quartz;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Topshelf;
 using Topshelf.Autofac;
@@ -16,14 +21,29 @@ using Topshelf.ServiceConfigurators;
 
 namespace ServerStatus
 {
+
+    public static class ServiceGlobalVariable
+    {
+        public static bool SignalRHubExists { get; set; }
+        public static bool SignalRHubExists1 { get; set; }
+
+    }
     class Program
     {
         static readonly ILog s_log = LogManager.GetLogger(typeof(Program));
         static IContainer _container;
 
 
+
+
         static int Main(string[] args)
         {
+
+            //THreadd t = new THreadd();
+            //t.call();
+
+
+
             Console.WriteLine("This sample demostrates how to integrate Quartz, TopShelf and Autofac.");
             s_log.Info("Starting...");
             try
@@ -32,25 +52,34 @@ namespace ServerStatus
 
                 ScheduleJobServiceConfiguratorExtensions.SchedulerFactory = () => _container.Resolve<IScheduler>();
 
-                HostFactory.Run(conf => {
+                HostFactory.Run(conf =>
+                {
                     conf.SetServiceName("AutofacExtras.Quartz.Sample");
                     conf.SetDisplayName("Quartz.Net integration for Autofac");
-                   
+
                     conf.UseAutofacContainer(_container);
 
-                    conf.Service<ServiceCore>(svc => {
+                    conf.Service<ServiceCore>(svc =>
+                    {
                         svc.ConstructUsingAutofacContainer();
                         svc.WhenStarted(o => o.Start());
-                        svc.WhenStopped(o => {
+                        svc.WhenStopped(o =>
+                        {
                             o.Stop();
                             _container.Dispose();
                         });
                         ConfigureScheduler(svc);
+                        ConfigureScheduler1(svc);
                     });
+
+
                 });
 
                 s_log.Info("Shutting down...");
                 log4net.LogManager.Shutdown();
+
+
+
                 return 0;
             }
 
@@ -64,14 +93,38 @@ namespace ServerStatus
 
         static void ConfigureScheduler(ServiceConfigurator<ServiceCore> svc)
         {
-            svc.ScheduleQuartzJob(q => {
-              
+            svc.ScheduleQuartzJob(q =>
+            {
+
+                
                 q.WithJob(JobBuilder.Create<HeartbeatJob>()
-                    .WithIdentity("Heartbeat", "Maintenance")
-                    .Build);
+                   .WithIdentity("Heartbeat1", "Maintenance1")
+                   .Build);
                 q.AddTrigger(() => TriggerBuilder.Create()
                     .WithSchedule(SimpleScheduleBuilder.RepeatSecondlyForever(30)).Build());
+
             });
+
+          
+
+        }
+
+        static void ConfigureScheduler1(ServiceConfigurator<ServiceCore> svc)
+        {
+            svc.ScheduleQuartzJob(q =>
+            {
+
+
+                q.WithJob(JobBuilder.Create<ServiceHeartBeatJob>()
+                   .WithIdentity("Heartbeat", "Maintenance")
+                   .Build);
+                q.AddTrigger(() => TriggerBuilder.Create()
+                    .WithSchedule(SimpleScheduleBuilder.RepeatSecondlyForever(10)).Build());
+
+            });
+
+
+
         }
 
         internal static ContainerBuilder ConfigureContainer(ContainerBuilder cb)
@@ -100,6 +153,37 @@ namespace ServerStatus
             // register dependencies
             cb.RegisterType<HeartbeatService>().As<IHeartbeatService>();
             cb.RegisterModule(new ServiceDIContainer());
+
+
+
+        }
+    }
+
+
+    class THreadd
+    {
+
+       public void call()
+        {
+            TimerCallback tmCallback = CheckEffectExpiry;
+            //Timer timer = new Timer(tmCallback, "test", 1000, 1000);
+            Timer timer = new Timer(tmCallback, "test", 10000, 1000);
+
+        }
+
+
+        void CheckEffectExpiry(object objectInfo)
+        {
+            if (ServiceGlobalVariable.SignalRHubExists)
+            {
+
+                Console.WriteLine("Press any key to exit the sample");
+
+                // Get the context for the Pusher hub
+                IHubContext hubContext = GlobalHost.ConnectionManager.GetHubContext<MyHub>();
+                hubContext.Clients.All.addMessage("213", "4654646546");
+                //TODO put your code
+            }
         }
     }
 }
