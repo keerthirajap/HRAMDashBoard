@@ -18,16 +18,16 @@
 
 
 
-    public class HeartbeatJob : IJob
+    public class ServerStatusCheckerJob : IJob
     {
 
 
         private readonly IHeartbeatService _hearbeat;
         IStoreServerService _IStoreServerService;
 
-        private static readonly ILog s_log = LogManager.GetLogger<HeartbeatJob>();
+        private static readonly ILog s_log = LogManager.GetLogger<ServerStatusCheckerJob>();
 
-        public HeartbeatJob(IHeartbeatService hearbeat, IStoreServerService iStoreServerService)
+        public ServerStatusCheckerJob(IHeartbeatService hearbeat, IStoreServerService iStoreServerService)
         {
             if (hearbeat == null) throw new ArgumentNullException(nameof(hearbeat));
             _hearbeat = hearbeat;
@@ -38,19 +38,6 @@
 
         public void Execute(IJobExecutionContext context)
         {
-
-
-
-            if (ServiceGlobalVariable.SignalRHubExists)
-            {
-
-                // Get the context for the Pusher hub
-                IHubContext hubContext = GlobalHost.ConnectionManager.GetHubContext<MyHub>();
-                hubContext.Clients.All.addMessage("StatusCheck", DateTime.Now.ToString());
-
-            }
-          
-
 
             List<StoreModel> storeList = new List<StoreModel>();
             storeList = this._IStoreServerService.GetStoresDetails();

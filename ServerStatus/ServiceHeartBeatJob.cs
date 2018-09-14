@@ -8,22 +8,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using DomainModel;
 namespace ServerStatus
 {
     class ServiceHeartBeatJob : IJob
     {
 
         private readonly IHeartbeatService _hearbeat;
-        IStoreServerService _IStoreServerService;
+        IHRAMServicesService _IHRAMServicesService;
 
-        private static readonly ILog s_log = LogManager.GetLogger<HeartbeatJob>();
+        private static readonly ILog s_log = LogManager.GetLogger<ServerStatusCheckerJob>();
 
-        public ServiceHeartBeatJob(IHeartbeatService hearbeat, IStoreServerService iStoreServerService)
+        public ServiceHeartBeatJob(IHeartbeatService hearbeat, IHRAMServicesService iHRAMServicesService)
         {
             if (hearbeat == null) throw new ArgumentNullException(nameof(hearbeat));
             _hearbeat = hearbeat;
-            this._IStoreServerService = iStoreServerService;
+            this._IHRAMServicesService = iHRAMServicesService;
         }
 
         public void Execute(IJobExecutionContext context)
@@ -43,12 +43,24 @@ namespace ServerStatus
             }
             else
             {
+                DateTime heartBeat = new DateTime();
+                heartBeat = DateTime.Now;
+                WindowsServiceStatus windowsServiceStatus = new WindowsServiceStatus();
+
+                windowsServiceStatus.HeartBeatValue = heartBeat;
+                windowsServiceStatus.RunningServerName = System.Environment.MachineName;
+                windowsServiceStatus.ServiceName = ServiceGlobalVariable.ServiceName;
+
+                this._IHRAMServicesService.UpdateServerServiceStatusBatch(windowsServiceStatus);
+
                 // Get the context for the Pusher hub
                 IHubContext hubContext = GlobalHost.ConnectionManager.GetHubContext<MyHub>();
-                hubContext.Clients.All.addMessage("HeartBeat", DateTime.Now.ToString());
+                hubContext.Clients.All.addMessage(ServiceGlobalVariable.ServiceName 
+                                    , heartBeat.ToString());
+                
             }
 
-         
+           
         }
 
     }

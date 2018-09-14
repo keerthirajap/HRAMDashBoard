@@ -1,0 +1,9 @@
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Database\HRAMDashBoard\HRAMDashBoard\bin\Debug\HRAMDashBoard.dacpac
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Database\HRAMDashBoard\HRAMDashBoard\bin\Debug\HRAMDashBoard.dll
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Database\HRAMDashBoard\HRAMDashBoard\bin\Debug\HRAMDashBoard.pdb
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Database\HRAMDashBoard\HRAMDashBoard\obj\Debug\Model.xml
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Database\HRAMDashBoard\HRAMDashBoard\obj\Debug\refactor.xml
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Database\HRAMDashBoard\HRAMDashBoard\obj\Debug\postdeploy.sql
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Database\HRAMDashBoard\HRAMDashBoard\obj\Debug\predeploy.sql
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Database\HRAMDashBoard\HRAMDashBoard\obj\Debug\HRAMDashBoard.dll
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Database\HRAMDashBoard\HRAMDashBoard\obj\Debug\HRAMDashBoard.pdb

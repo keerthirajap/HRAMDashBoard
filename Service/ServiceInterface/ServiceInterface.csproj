@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IDashBoardService.cs" />
+    <Compile Include="IHRAMServicesService.cs" />
     <Compile Include="IStoreServerService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

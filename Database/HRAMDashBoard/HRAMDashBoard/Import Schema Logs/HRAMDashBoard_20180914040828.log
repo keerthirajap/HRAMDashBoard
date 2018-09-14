@@ -1,0 +1,77 @@
+14-09-2018 21:38:28	This log contains information about the import schema operation into project 'HRAMDashBoard' on computer 'DESKTOP-0M9B68P' by user 'Keerthi Raja P'.
+14-09-2018 21:38:28	Import of database schema has started.
+14-09-2018 21:38:32	Gathering database options
+14-09-2018 21:38:32	Gathering users
+14-09-2018 21:38:32	Gathering roles
+14-09-2018 21:38:32	Gathering application roles
+14-09-2018 21:38:32	Gathering role memberships
+14-09-2018 21:38:32	Gathering filegroups
+14-09-2018 21:38:32	Gathering full-text catalogs
+14-09-2018 21:38:32	Gathering assemblies
+14-09-2018 21:38:32	Gathering certificates
+14-09-2018 21:38:32	Gathering asymmetric keys
+14-09-2018 21:38:32	Gathering symmetric keys
+14-09-2018 21:38:32	Gathering encrypted symmetric keys
+14-09-2018 21:38:32	Gathering schemas
+14-09-2018 21:38:32	Gathering XML schema collections
+14-09-2018 21:38:32	Gathering user-defined data types
+14-09-2018 21:38:32	Gathering user-defined types
+14-09-2018 21:38:32	Gathering table types
+14-09-2018 21:38:32	Gathering unique keys for table types
+14-09-2018 21:38:32	Gathering primary keys for table types
+14-09-2018 21:38:32	Gathering indexes for table types
+14-09-2018 21:38:32	Gathering check constraints for table types
+14-09-2018 21:38:32	Gathering default constraints for table types
+14-09-2018 21:38:32	Gathering partition functions
+14-09-2018 21:38:32	Gathering partition schemes
+14-09-2018 21:38:33	Gathering functions
+14-09-2018 21:38:33	Gathering encrypted functions
+14-09-2018 21:38:33	Gathering aggregates
+14-09-2018 21:38:33	Gathering procedures
+14-09-2018 21:38:33	Gathering encrypted procedures
+14-09-2018 21:38:33	Gathering tables
+14-09-2018 21:38:33	Gathering primary keys
+14-09-2018 21:38:33	Gathering unique constraints
+14-09-2018 21:38:33	Gathering foreign keys
+14-09-2018 21:38:33	Gathering default constraints
+14-09-2018 21:38:33	Gathering check constraints
+14-09-2018 21:38:33	Gathering views
+14-09-2018 21:38:33	Gathering encrypted views
+14-09-2018 21:38:33	Gathering indexes
+14-09-2018 21:38:33	Gathering statistics
+14-09-2018 21:38:33	Gathering full-text index stoplists
+14-09-2018 21:38:33	Gathering search property lists
+14-09-2018 21:38:33	Gathering search properties
+14-09-2018 21:38:33	Gathering full-text indexes
+14-09-2018 21:38:33	Gathering column store indexes
+14-09-2018 21:38:33	Gathering spatial indexes
+14-09-2018 21:38:33	Gathering XML indexes
+14-09-2018 21:38:33	Gathering Selective XML indexes
+14-09-2018 21:38:33	Gathering encrypted triggers
+14-09-2018 21:38:33	Gathering triggers
+14-09-2018 21:38:33	Gathering encrypted and clr ddl triggers
+14-09-2018 21:38:33	Gathering ddl triggers
+14-09-2018 21:38:33	Gathering synonyms
+14-09-2018 21:38:33	Gathering defaults
+14-09-2018 21:38:33	Gathering data constraint uddt bindings
+14-09-2018 21:38:33	Gathering rules
+14-09-2018 21:38:33	Gathering data constraint uddt bindings
+14-09-2018 21:38:33	Gathering message types
+14-09-2018 21:38:33	Gathering queues
+14-09-2018 21:38:33	Gathering contracts
+14-09-2018 21:38:33	Gathering services
+14-09-2018 21:38:33	Gathering event notifications
+14-09-2018 21:38:33	Gathering remote service bindings
+14-09-2018 21:38:33	Gathering broker priorities
+14-09-2018 21:38:33	Gathering signatures
+14-09-2018 21:38:33	Gathering data compression options
+14-09-2018 21:38:33	Gathering sequence types
+14-09-2018 21:38:33	Gathering extended properties
+14-09-2018 21:38:33	Gathering credentials
+14-09-2018 21:38:33	Gathering logins
+14-09-2018 21:38:33	Gathering server audits
+14-09-2018 21:38:33	Scanning project for duplicate elements
+14-09-2018 21:38:33	Finished duplicate element processing
+14-09-2018 21:38:33	Finished importing database.
+14-09-2018 21:38:33	A summary of the import was saved to the following location: C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\Database\HRAMDashBoard\HRAMDashBoard\Import Schema Logs\HRAMDashBoard_20180914040828.log
+14-09-2018 21:38:33	Click Finish to continue...

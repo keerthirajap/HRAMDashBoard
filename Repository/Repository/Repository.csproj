@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IDashBoardRepository.cs" />
+    <Compile Include="IHRAMServicesRepository.cs" />
     <Compile Include="IStoreServerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

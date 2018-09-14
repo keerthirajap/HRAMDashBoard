@@ -126,7 +126,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HeartbeatJob.cs" />
+    <Compile Include="ServerStatusCheckerJob.cs" />
     <Compile Include="HeartbeatService.cs" />
     <Compile Include="Hub.cs" />
     <Compile Include="Program.cs" />

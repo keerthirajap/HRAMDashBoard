@@ -11,6 +11,7 @@ C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAM
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\bin\Debug\Owin.dll
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\bin\Debug\System.Web.Cors.dll
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\bin\Debug\Topshelf.dll
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\bin\Debug\Microsoft.Owin.xml
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\bin\Debug\Microsoft.Owin.Cors.xml
@@ -19,8 +20,7 @@ C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAM
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\bin\Debug\Microsoft.Owin.Hosting.xml
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\bin\Debug\Microsoft.Owin.Security.xml
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\bin\Debug\Topshelf.xml
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\obj\Debug\SignalRHub2.csprojResolveAssemblyReference.cache
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\obj\Debug\SignalRHub2.exe
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\obj\Debug\SignalRHub2.pdb
-C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\bin\Debug\Topshelf.dll
-C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\SignalRHub2\bin\Debug\Topshelf.xml

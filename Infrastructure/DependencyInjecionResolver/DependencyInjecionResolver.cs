@@ -17,6 +17,7 @@ namespace DependencyInjecionResolver
 
             builder.RegisterType<StoreServerService>().As<IStoreServerService>().InstancePerLifetimeScope();
             builder.RegisterType<DashBoardService>().As<IDashBoardService>().InstancePerLifetimeScope();
+            builder.RegisterType<HRAMServicesService>().As<IHRAMServicesService>().InstancePerLifetimeScope();
 
             // base.Load(builder);
         }
