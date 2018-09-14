@@ -49,7 +49,7 @@ namespace ServiceConcrete
 
 
 
-        public List<WindowsServiceStatus> GetWindowsServiceDetails()
+        public List<ServerServiceStatus> GetWindowsServiceDetails()
         {
             return this._IStoreServerRepository.GetWindowsServiceDetails();
         }

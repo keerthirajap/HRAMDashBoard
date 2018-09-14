@@ -20,7 +20,7 @@ namespace ServiceInterface
 
         bool UpdateServerServiceStatusBatch(List<StoreServerModel> ServerStatusDetails);
 
-        List<WindowsServiceStatus> GetWindowsServiceDetails();
+        List<ServerServiceStatus> GetWindowsServiceDetails();
 
         Int64 GenerateWindowsServiceStatusBatch(StoreServerModel storeServerDetails);
     }

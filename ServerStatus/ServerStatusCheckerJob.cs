@@ -15,9 +15,8 @@
     using System.IO;
     using Owin;
     using Microsoft.Owin.Cors;
-
-
-
+    using System.Management;
+    using System.Linq;
     public class ServerStatusCheckerJob : IJob
     {
 
@@ -46,8 +45,8 @@
 
             List<StoreServerModel> storeServerStatusList = new List<StoreServerModel>();
 
-            List<WindowsServiceStatus> windowsServiceList = new List<WindowsServiceStatus>();
-            List<WindowsServiceStatus> windowsServiceRunList = new List<WindowsServiceStatus>();
+            List<ServerServiceStatus> windowsServiceList = new List<ServerServiceStatus>();
+            List<ServerServiceStatus> windowsServiceRunList = new List<ServerServiceStatus>();
 
 
             storeServerList = this._IStoreServerService.GetStoresServerDetails();
@@ -92,13 +91,57 @@
 
                 }
 
-                if (storeServerStatus.IsServerActive == true)
+                List<ServerServiceStatus> windowsServiceCurrentRunList = new List<ServerServiceStatus>();
+
+                windowsServiceCurrentRunList = windowsServiceList.Where(
+                                                     w => w.StoreNo == item.StoreNo
+                                                                        ).ToList();
+
+                if (storeServerStatus.IsServerActive == true
+                    && windowsServiceCurrentRunList != null
+                    && windowsServiceCurrentRunList.Count > 0
+                    )
                 {
                     try
                     {
+                        ConnectionOptions op = new ConnectionOptions();
+                        op.Username = "Keerthi Raja P";
+                        op.Password = "KIRTHI789+K";
+                        ManagementScope scope = new ManagementScope(@"\\" +
+                                                            item.ISSIpAddress
+                                                            + @"\root\cimv2", null);
+                        scope.Connect();
+                        ManagementPath path = new ManagementPath("Win32_Service");
+                        ManagementClass services;
+                        services = new ManagementClass(scope, path, null);
 
+                        ManagementObjectCollection moc = services.GetInstances();
+                        ManagementObject[] deviceArray = new ManagementObject[moc.Count];
+                        moc.CopyTo(deviceArray, 0);
+
+                        windowsServiceCurrentRunList.ForEach(x =>
+                       {
+                           ServerServiceStatus serverServiceStatus = new ServerServiceStatus();
+                           serverServiceStatus = x;
+                           var vvv = deviceArray.Where(w => w.GetPropertyValue("Name").ToString() == x.ServiceName);
+
+                           if (vvv.Any(a => a.GetPropertyValue("State").ToString().ToLower().Equals("running"))
+                           )
+                           {
+                               serverServiceStatus.IsServiceActive = true;
+                           }
+                           else
+                           {
+                               serverServiceStatus.IsServiceActive = false;
+
+                           }
+
+                       }
+                            );
+
+                        windowsServiceRunList.AddRange(windowsServiceCurrentRunList);
                     }
-                    catch (Exception)
+                    catch (Exception ex)
                     {
 
                         throw;
@@ -108,6 +151,7 @@
                 lock (storeServerStatusList)
                 {
                     storeServerStatusList.Add(storeServerStatus);
+                 
                 }
             }
 

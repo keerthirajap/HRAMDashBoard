@@ -2,3 +2,4 @@ C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAM
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\DomainModel\DomainModel\bin\Debug\DomainModel.pdb
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\DomainModel\DomainModel\obj\Debug\DomainModel.dll
 C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\DomainModel\DomainModel\obj\Debug\DomainModel.pdb
+C:\Users\Keerthi Raja P\Documents\Visual Studio 2015\Projects\HRAMDashboard\HRAMDashBoard\DomainModel\DomainModel\obj\Debug\DomainModel.csprojResolveAssemblyReference.cache

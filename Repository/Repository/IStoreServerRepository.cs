@@ -26,7 +26,7 @@ namespace Repository
 
 
         [Sql("SELECT *  FROM [dbo].[HRAMServiceConfig]")]
-        List<WindowsServiceStatus> GetWindowsServiceDetails();
+        List<ServerServiceStatus> GetWindowsServiceDetails();
 
         [Sql("P_GenerateWindowsServiceStatusBatch")]
         Int64 GenerateWindowsServiceStatusBatch(StoreServerModel storeServerDetails);
