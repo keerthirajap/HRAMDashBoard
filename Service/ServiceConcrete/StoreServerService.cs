@@ -47,5 +47,16 @@ namespace ServiceConcrete
             return this._IStoreServerRepository.UpdateServerServiceStatusBatch(ServerStatusDetails);
         }
 
+
+
+        public List<WindowsServiceStatus> GetWindowsServiceDetails()
+        {
+            return this._IStoreServerRepository.GetWindowsServiceDetails();
+        }
+
+        public Int64 GenerateWindowsServiceStatusBatch(StoreServerModel storeServerDetails)
+        {
+            return this._IStoreServerRepository.GenerateWindowsServiceStatusBatch(storeServerDetails);
+        }
     }
 }

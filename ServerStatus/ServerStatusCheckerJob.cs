@@ -46,14 +46,22 @@
 
             List<StoreServerModel> storeServerStatusList = new List<StoreServerModel>();
 
+            List<WindowsServiceStatus> windowsServiceList = new List<WindowsServiceStatus>();
+            List<WindowsServiceStatus> windowsServiceRunList = new List<WindowsServiceStatus>();
+
+
             storeServerList = this._IStoreServerService.GetStoresServerDetails();
+            windowsServiceList = this._IStoreServerService.GetWindowsServiceDetails();
 
             StoreServerModel storeServerDetails = new StoreServerModel();
             storeServerDetails.UserId = 1;
+
             Int64 batchId = this._IStoreServerService.GenerateServerServiceStatusBatch(storeServerDetails);
 
+            Int64 windowsBatchId = this._IStoreServerService.GenerateWindowsServiceStatusBatch(storeServerDetails);
             foreach (var item in storeServerList)
             {
+
                 StoreServerModel storeServerStatus = new StoreServerModel();
                 storeServerStatus = item;
                 storeServerStatus.ServerStatusBatchId = batchId;
@@ -82,6 +90,19 @@
 
                     storeServerStatus.IsServerActive = false;
 
+                }
+
+                if (storeServerStatus.IsServerActive == true)
+                {
+                    try
+                    {
+
+                    }
+                    catch (Exception)
+                    {
+
+                        throw;
+                    }
                 }
 
                 lock (storeServerStatusList)

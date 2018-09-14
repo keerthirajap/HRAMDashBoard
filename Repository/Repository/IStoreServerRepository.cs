@@ -23,5 +23,13 @@ namespace Repository
 
         [Sql("P_UpdateServerServiceStatusBatch")]
         bool UpdateServerServiceStatusBatch(List<StoreServerModel> T_ServerStatusDetails);
+
+
+        [Sql("SELECT *  FROM [dbo].[HRAMServiceConfig]")]
+        List<WindowsServiceStatus> GetWindowsServiceDetails();
+
+        [Sql("P_GenerateWindowsServiceStatusBatch")]
+        Int64 GenerateWindowsServiceStatusBatch(StoreServerModel storeServerDetails);
+
     }
 }

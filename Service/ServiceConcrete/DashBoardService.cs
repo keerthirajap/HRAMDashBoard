@@ -31,6 +31,5 @@ namespace ServiceConcrete
             return this._IDashBoardRepository.GetDashBoardWidgetDetails();
         }
 
-
     }
 }

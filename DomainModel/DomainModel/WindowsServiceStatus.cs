@@ -8,6 +8,8 @@ namespace DomainModel
 {
     public class WindowsServiceStatus
     {
+        public Int64 StoreNo { get; set; }
+
         public Int64 HeartBeatId { get; set; }
         public string ServiceName { get; set; }
         public string RunningServerName { get; set; }
